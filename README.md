@@ -1,5 +1,5 @@
 ﻿# ComfyUI-Inspyrenet-Rembg
-[ComfyUI](https://github.com/comfyanonymous/ComfyUI) node for background removal implementing [InSPyReNet](https://github.com/plemeri/InSPyReNet)
+[ComfyUI](https://github.com/comfyanonymous/ComfyUI) node for background removal, implementing [InSPyReNet](https://github.com/plemeri/InSPyReNet)
 </br></br>
 
 I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OPEN RMBG, ...) but in all of my tests InSPyReNet was always ON A WHOLE DIFFERENT LEVEL!
