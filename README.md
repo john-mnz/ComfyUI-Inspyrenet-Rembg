@@ -4,17 +4,17 @@
 
 I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OPEN RMBG, ...) but in all of my tests InSPyReNet was always ON A WHOLE DIFFERENT LEVEL!
 
-the cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) has MIT License which allows for Commercial use (for example BRIA does not allow Commercial use to my knowledge)
+The cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) has MIT License which allows for Commercial use (for example BRIA does not allow Commercial use to my knowledge)
 
 
-the node was missing from comfy so I developed this which has been of great help to me ever since.
+The node was missing from comfy so I developed this which has been of great help to me ever since.
 
-the node can take image batch as input too
+It can take image batch as input too
 
 I hope it helps you and your workflows as well🙂
 
 
-check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I will not be held accountable :)
+Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I will not be held accountable :)
 
 
 ## Installation 
