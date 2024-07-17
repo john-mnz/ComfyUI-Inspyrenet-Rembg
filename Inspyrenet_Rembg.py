@@ -1,7 +1,6 @@
 from PIL import Image
 import torch
 import numpy as np
-from functools import reduce
 from transparent_background import Remover
 from tqdm import tqdm
 
@@ -41,7 +40,7 @@ class InspyrenetRembg:
             mid = remover.process(tensor2pil(img), type='rgba')
             out =  pil2tensor(mid)
             img_list.append(out)
-        img_stack = reduce(lambda img1,img2: torch.cat([img1,img2]), img_list)
+        img_stack = torch.cat(img_list, dim=0)
         mask = img_stack[:, :, :, 3]
         return (img_stack, mask)
         
