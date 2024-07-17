@@ -19,6 +19,10 @@ Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I
 
 ## Installation 
 
+### Simple way
+search for  `ComfyUI-Inspyrenet-Rembg` in ComfyUI-Manager and hit install
+
+### Manual
 1. Go to your `custom_nodes` folder in ComfyUI, open the terminal and run the following command:
 
 ```
