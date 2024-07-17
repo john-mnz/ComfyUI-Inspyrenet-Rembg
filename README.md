@@ -31,6 +31,8 @@ git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git
 pip install -r requirements.txt
 ```
 
+It downloads the pretrained model automatically at first use
+
 ## note 
 If torchscript_jif is set to on, it will trace model with pytorch built-in torchscript JIT compiler. May cause delay in initialization, but reduces inference time and gpu memory usage.
 
