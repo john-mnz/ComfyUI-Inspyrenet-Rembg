@@ -28,6 +28,7 @@ git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git
 2. Install requirements:
 
 ```
+cd ComfyUI-Inspyrenet-Rembg
 pip install -r requirements.txt
 ```
 
