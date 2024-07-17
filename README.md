@@ -2,7 +2,7 @@
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) node for background removal implementing [InSPyReNet](https://github.com/plemeri/InSPyReNet)
 </br></br>
 
-I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OPEN RMBG, ...) but in all of my tests InSPyReNet was always on another level!
+I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OPEN RMBG, ...) but in all of my tests InSPyReNet was always ON A WHOLE DIFFERENT LEVEL!
 
 the cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) has MIT License which allows for Commercial use (for example BRIA does not allow Commercial use to my knowledge)
 
@@ -11,7 +11,7 @@ the node was missing from comfy so I developed this which has been of great help
 
 the node can take image batch as input too
 
-I hope it helps you and your workflows as well
+I hope it helps you and your workflows as well🙂
 
 
 check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I will not be held accountable :)
