@@ -9,7 +9,7 @@ The cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) ha
 
 The node was missing from comfy so I developed this which has been of great help to me ever since.
 
-It can take image batch as input too
+It can take image batch as input too and is far faster than other rembg nodes that I've used for bache of images (perfect for the frames of a video)
 
 I hope it helps you and your workflows as well🙂
 
