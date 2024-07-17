@@ -31,7 +31,9 @@ git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git
 pip install -r requirements.txt
 ```
 
+## note 
 If torchscript_jif is set to on, it will trace model with pytorch built-in torchscript JIT compiler. May cause delay in initialization, but reduces inference time and gpu memory usage.
+
 
 
 ![ComfyUI-Inspyrenet-Rembg2](https://github.com/user-attachments/assets/f68ec1ae-5c64-4ded-899b-10dfb783d5eb)
