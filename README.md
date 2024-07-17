@@ -19,18 +19,19 @@ Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I
 
 ## Installation 
 
-1. Clone to your `custom_nodes` folder in ComfyUI:
+1. Go to your `custom_nodes` folder in ComfyUI, open the terminal and run the following command:
 
 ```
 git clone https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg.git
 ```
 
-2. Install requirements:
+2. To install requirements, run the following commands:
 
 ```
 cd ComfyUI-Inspyrenet-Rembg
 pip install -r requirements.txt
 ```
+Done!
 
 It downloads the pretrained model automatically at first use
 
