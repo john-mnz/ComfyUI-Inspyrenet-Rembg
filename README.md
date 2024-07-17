@@ -21,7 +21,9 @@ Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I
 
 ### Simple way:
 
-search for  `ComfyUI-Inspyrenet-Rembg` in ComfyUI-Manager and hit install
+search for  `ComfyUI-Inspyrenet-Rembg` in ComfyUI-Manager and hit install.
+
+Done!
 
 ### Manual:
 
