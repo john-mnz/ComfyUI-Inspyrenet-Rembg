@@ -6,15 +6,17 @@ I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OP
 
 The cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) has MIT License which allows for Commercial use (for example BRIA does not allow Commercial use to my knowledge)
 
-
-The node was missing from comfy so I developed this which has been of great help to me ever since.
-
-It can take image batch as input too and is far faster than other rembg nodes that I've used for bache of images (perfect for the frames of a video)
-
-I hope it helps you and your workflows as well🙂
-
-
 Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I will not be held accountable :)
+
+## Features
+
+superior rembg quality compared to other methods
+
+can take batch of images as input
+
+Optimized for image batch to be the fastest rembg node (perfect for video frames)
+
+outputs both the image and the corresponding mask
 
 
 ## Installation 
