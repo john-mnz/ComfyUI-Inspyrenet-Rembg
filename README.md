@@ -10,13 +10,15 @@ Check the Licenses for yourself I will not be held accountable :)
 
 ## Features
 
-superior rembg quality compared to other methods
+Superior rembg quality compared to other methods
 
-can take batch of images as input
+Can take batch of images as input
 
 Optimized for image batch to be the fastest rembg node (perfect for video frames)
 
-outputs both the image and the corresponding mask
+Outputs both the image and the corresponding mask
+
+Shows the progress in terminal
 
 
 ## Installation 
