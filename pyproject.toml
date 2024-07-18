@@ -10,6 +10,6 @@ Repository = "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "john-mnz"
 DisplayName = "ComfyUI-Inspyrenet-Rembg"
 Icon = ""
