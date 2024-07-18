@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-inspyrenet-rembg"
+description = "ComfyUI node for background removal implementing [a/InSPyReNet](https://github.com/plemeri/InSPyReNet)"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["transparent-background"]
+
+[project.urls]
+Repository = "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "john-mnz"
+DisplayName = "ComfyUI-Inspyrenet-Rembg"
+Icon = ""
