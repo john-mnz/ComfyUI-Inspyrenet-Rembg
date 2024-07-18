@@ -6,7 +6,7 @@ I've tested a lot of different AI rembg methods (BRIA - U2Net - IsNet - SAM - OP
 
 The cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) has MIT License which allows for Commercial use (for example BRIA does not allow Commercial use to my knowledge)
 
-Check [InSPyReNet](https://github.com/plemeri/InSPyReNet) License for yourself I will not be held accountable :)
+Check the Licenses for yourself I will not be held accountable :)
 
 ## Features
 
