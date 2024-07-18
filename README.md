@@ -53,4 +53,7 @@ If torchscript_jif is set to on, it will trace model with pytorch built-in torch
 ## show case 
 ![ComfyUI-Inspyrenet-Rembg2](https://github.com/user-attachments/assets/f68ec1ae-5c64-4ded-899b-10dfb783d5eb)
 
+![reddit inspyrenet](https://github.com/user-attachments/assets/bbc36135-1913-4ba3-83e4-6ab86e65ec98)
+
 ![ComfyUI-Inspyrenet-Rembg](https://github.com/user-attachments/assets/e1817609-7645-4d72-b187-0cf5e74cb6c5)
+
