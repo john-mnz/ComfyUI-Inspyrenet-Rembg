@@ -1,0 +1,226 @@
+{
+  "last_node_id": 32,
+  "last_link_id": 81,
+  "nodes": [
+    {
+      "id": 30,
+      "type": "SaveImage",
+      "pos": [
+        1341.0395119585123,
+        49.0805990827805
+      ],
+      "size": [
+        493.23888330834507,
+        373.78704187161657
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 74
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "aaa"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "InspyrenetRembg",
+      "pos": [
+        739.0395119585114,
+        279.0805990827804
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            74
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            81
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InspyrenetRembg"
+      },
+      "widgets_values": [
+        "default"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "MaskToImage",
+      "pos": [
+        1099.0395119585123,
+        488.0805990827807
+      ],
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      }
+    },
+    {
+      "id": 32,
+      "type": "PreviewImage",
+      "pos": [
+        1343.0395119585123,
+        526.0805990827807
+      ],
+      "size": [
+        493.51800087812853,
+        382.0192426895196
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 80
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        53,
+        274
+      ],
+      "size": {
+        "0": 589.18896484375,
+        "1": 468.7266845703125
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            77
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "image (21) (1).png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      74,
+      23,
+      0,
+      30,
+      0,
+      "IMAGE"
+    ],
+    [
+      77,
+      3,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      31,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      23,
+      1,
+      31,
+      0,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.28531167061100027,
+      "offset": [
+        1448.711001888544,
+        1238.879998091048
+      ]
+    }
+  },
+  "version": 0.4
+}
