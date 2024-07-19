@@ -50,9 +50,15 @@ It downloads the pretrained model automatically at first use
 ## note 
 If torchscript_jif is set to on, it will trace model with pytorch built-in torchscript JIT compiler. May cause delay in initialization, but reduces inference time and gpu memory usage.
 
+## basic workflow 
+
+download this file and drag and drop it into your comfyui as basic workflow:
+
+[inspyrenet-rembg-basic-workflow.json](https://github.com/user-attachments/files/16311386/inspyrenet-rembg-basic-workflow.json)
+
+
 ## show case 
 
 ![reddit inspyrenet](https://github.com/user-attachments/assets/bbc36135-1913-4ba3-83e4-6ab86e65ec98)
 
 ![ComfyUI-Inspyrenet-Rembg](https://github.com/user-attachments/assets/e1817609-7645-4d72-b187-0cf5e74cb6c5)
-
