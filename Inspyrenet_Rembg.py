@@ -44,3 +44,34 @@ class InspyrenetRembg:
         mask = img_stack[:, :, :, 3]
         return (img_stack, mask)
         
+class InspyrenetRembgAdvanced:
+    def __init__(self):
+        pass
+    
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "image": ("IMAGE",),
+                "threshold": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.01}),
+                "torchscript_jit": (["default", "on"],)
+            },
+        }
+
+    RETURN_TYPES = ("IMAGE", "MASK")
+    FUNCTION = "remove_background"
+    CATEGORY = "image"
+
+    def remove_background(self, image, torchscript_jit, threshold):
+        if (torchscript_jit == "default"):
+            remover = Remover()
+        else:
+            remover = Remover(jit=True)
+        img_list = []
+        for img in tqdm(image, "Inspyrenet Rembg"):
+            mid = remover.process(tensor2pil(img), type='rgba', threshold=threshold)
+            out =  pil2tensor(mid)
+            img_list.append(out)
+        img_stack = torch.cat(img_list, dim=0)
+        mask = img_stack[:, :, :, 3]
+        return (img_stack, mask)
