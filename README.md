@@ -8,6 +8,10 @@ The cherry on top is that [InSPyReNet](https://github.com/plemeri/InSPyReNet) ha
 
 Check the Licenses for yourself I will not be held accountable :)
 
+## Updates
+
+Added an advanced node that supports threshold
+
 ## Features
 
 Superior rembg quality compared to other methods (just give it a try!)
