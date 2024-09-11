@@ -29,7 +29,6 @@ class InspyrenetRembg:
     CATEGORY = "InspyrenetRembg"
     RETURN_TYPES = ("IMAGE", "MASK")
     FUNCTION = "remove_background"
-    CATEGORY = "image"
 
     def remove_background(self, image, torchscript_jit):
         if (torchscript_jit == "default"):
@@ -63,7 +62,6 @@ class InspyrenetRembg_selectmodel:
     CATEGORY = "InspyrenetRembg"
     RETURN_TYPES = ("IMAGE", "MASK")
     FUNCTION = "remove_background"
-    CATEGORY = "image"
 
     def remove_background(self, image, torchscript_jit, model, device):
         if device == "Auto": device = None
@@ -95,7 +93,6 @@ class InspyrenetRembgAdvanced:
     CATEGORY = "InspyrenetRembg"
     RETURN_TYPES = ("IMAGE", "MASK")
     FUNCTION = "remove_background"
-    CATEGORY = "image"
 
     def remove_background(self, image, torchscript_jit, threshold):
         if (torchscript_jit == "default"):
