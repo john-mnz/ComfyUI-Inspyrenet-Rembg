@@ -51,6 +51,14 @@ Done!
 
 It downloads the pretrained model automatically at first use
 
+You can also manually download the model to `comfyui/models/transparent-background` (suggest downloading a base)
+
+  [base](https://github.com/plemeri/transparent-background/releases/download/1.2.12/ckpt_base.pth)
+  
+  [fast](https://github.com/plemeri/transparent-background/releases/download/1.2.12/ckpt_fast.pth)
+  
+  [base-nightly](https://github.com/plemeri/transparent-background/releases/download/1.2.12/ckpt_base_nightly.pth)
+
 ## note 
 If torchscript_jif is set to on, it will trace model with pytorch built-in torchscript JIT compiler. May cause delay in initialization, but reduces inference time and gpu memory usage.
 
