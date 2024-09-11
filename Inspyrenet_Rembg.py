@@ -1,7 +1,7 @@
 from PIL import Image
 import torch
 import numpy as np
-from transparent_background import Remover
+from .Remover_comfy_path import Remover
 from tqdm import tqdm
 
 
@@ -26,6 +26,7 @@ class InspyrenetRembg:
             },
         }
 
+    CATEGORY = "InspyrenetRembg"
     RETURN_TYPES = ("IMAGE", "MASK")
     FUNCTION = "remove_background"
     CATEGORY = "image"
@@ -35,6 +36,39 @@ class InspyrenetRembg:
             remover = Remover()
         else:
             remover = Remover(jit=True)
+        img_list = []
+        for img in tqdm(image, "Inspyrenet Rembg"):
+            mid = remover.process(tensor2pil(img), type='rgba')
+            out =  pil2tensor(mid)
+            img_list.append(out)
+        img_stack = torch.cat(img_list, dim=0)
+        mask = img_stack[:, :, :, 3]
+        return (img_stack, mask)
+    
+class InspyrenetRembg_selectmodel:
+    def __init__(self):
+        pass
+    
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "image": ("IMAGE",),
+                "torchscript_jit": ("BOOLEAN",{"default": False}),
+                "model": (["base", "fast", "base-nightly"],{"default": "base"}),
+                "device": (["Auto", "cpu", "cuda:0", "mps:0"],{"default": "Auto"}),
+            },
+        }
+    
+    CATEGORY = "InspyrenetRembg"
+    RETURN_TYPES = ("IMAGE", "MASK")
+    FUNCTION = "remove_background"
+    CATEGORY = "image"
+
+    def remove_background(self, image, torchscript_jit, model, device):
+        if device == "Auto": device = None
+        remover = Remover(mode=model, jit=torchscript_jit)
+
         img_list = []
         for img in tqdm(image, "Inspyrenet Rembg"):
             mid = remover.process(tensor2pil(img), type='rgba')
@@ -57,7 +91,8 @@ class InspyrenetRembgAdvanced:
                 "torchscript_jit": (["default", "on"],)
             },
         }
-
+    
+    CATEGORY = "InspyrenetRembg"
     RETURN_TYPES = ("IMAGE", "MASK")
     FUNCTION = "remove_background"
     CATEGORY = "image"
