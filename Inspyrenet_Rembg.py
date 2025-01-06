@@ -6,7 +6,7 @@ from tqdm import tqdm
 import os
 import folder_paths
 os.environ['TRANSPARENT_BACKGROUND_FILE_PATH']=os.path.join(folder_paths.models_dir, "transparent_background")
-ckpt_path = os.path.join(folder_paths.models_dir, "transparent_background", "ckpt_base.pth")
+ckpt_path = os.path.join(folder_paths.models_dir, "transparent_background", ".transparent-background", "ckpt_base.pth")
 ckpt_path = None if not os.path.exists(ckpt_path) else ckpt_path
 # Tensor to PIL
 def tensor2pil(image):
