@@ -2,7 +2,7 @@
 name = "comfyui-inspyrenet-rembg"
 description = "ComfyUI node for background removal implementing [a/InSPyReNet](https://github.com/plemeri/InSPyReNet)"
 version = "1.1.1"
-license = "LICENSE"
+license = { file = "LICENSE" }
 dependencies = ["transparent-background"]
 
 [project.urls]
